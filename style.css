@@ -137,6 +137,7 @@ body::-webkit-scrollbar-thumb
     border-radius: 10px;
     width: 210px;
     position: relative;
+    transition: 0.5s;
     
 }
 
@@ -152,6 +153,10 @@ body::-webkit-scrollbar-thumb
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+.item:hover{
+    transform: scale(1.1);
 }
 
 .item p{
