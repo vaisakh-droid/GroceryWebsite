@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery-Items</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="navbar">
+            <h3>Grocery</h3>
+            <div class="links">
+                <h4>Home</h4>
+                <h4>Cart</h4>
+                <h4>Buy</h4>
+                <h4>Account</h4>
+            </div>
+            <div class="hamburger">
+                <h4><i class="fas fa-grip-lines"></i></h4>
+            </div>
+        </div>
+
+        <div class="text">
+            <h1 style="font-size: 50px;color:#10b981;margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i></h1>
+            <h1>These are the list of items in your cart.</h1>
+            <p>See all your grocery items this week. You can choose your daily needs products from this list and get some special offer too!!</p>
+    
+        </div>
+      
+        <div class="items">
+
+            <!-- <div class="item">
+                <img src="images/apple.jpg" alt="">
+                <h3>Apple</h3>
+                <p><i class="fas fa-star"></i>1</p>
+            </div>
+            <div class="item">
+                <img src="images/blackberries.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>2</p>
+            </div>
+            <div class="item">
+                <img src="images/banana.jpg" alt="">
+                <h3>Banana</h3>
+                <p><i class="fas fa-star"></i>3</p>
+            </div>
+            <div class="item">
+                <img src="images/Strawberries.jpg" alt="">
+                <h3>Strawberries</h3>
+                <p><i class="fas fa-star"></i>4</p>
+            </div>
+            <div class="item">
+                <img src="images/cauliflower.jpg" alt="">
+                <h3>Cauliflower</h3>
+                <p><i class="fas fa-star"></i>5</p>
+            </div>
+            <div class="item">
+                <img src="images/pineapple.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>6</p>
+            </div>
+
+            <div class="item">
+                <img src="images/apple.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>7</p>
+            </div>
+            <div class="item">
+                <img src="images/blackberries.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>8</p>
+            </div>
+            <div class="item">
+                <img src="images/banana.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>9</p>
+            </div>
+            <div class="item">
+                <img src="images/Strawberries.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>10</p>
+            </div>
+            <div class="item">
+                <img src="images/cauliflower.jpg" alt="">
+                <h3>Blackberries</h3>
+                <p><i class="fas fa-star"></i>11</p>
+            </div>
+            <div class="item">
+                <img src="images/pineapple.jpg" alt="">
+                <h3><i class="fas fa-star"></i>Blackberries</h3>
+            </div> -->
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        var url = "groceryItems.txt";
+        
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+                myFunction(myArr);
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+        
+        function myFunction(arr) {
+            var out = "";
+            var i;
+            for(i = 0; i < arr.length; i++) {
+                const item = document.createElement('div');
+                item.classList.add('item')
+
+                image = document.createElement('img');
+                image.src = arr[i].image
+                
+                item.append(image)
+                console.log(typeof arr[i].name)
+                p_name = document.createElement('h3')
+                p_name.innerText = arr[i].name
+
+                item.append(p_name)
+
+                paragraph = document.createElement('p')
+                paragraph.innerText = arr[i].number
+
+                item.append(paragraph)
+
+                const items = document.querySelector('.items')
+                items.append(item)
+
+            }
+           
+        }
+
+        </script>
+
+
+</body>
+</html>

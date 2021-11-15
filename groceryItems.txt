@@ -1,0 +1,63 @@
+[
+{
+        "number":"1",
+        "name":"Apple",
+        "image":"images/apple.jpg"
+},
+
+{
+        "number":"2",
+        "name":"Blackberries",
+        "image":"images/blackberries.jpg"
+},
+
+{
+        "number":"3",
+        "name":"Bananas",
+        "image":"images/banana.jpg"
+},
+
+{
+        "number":"4",
+        "name":"Strawberries",
+        "image":"images/Strawberries.jpg"
+},
+
+{
+        "number":"5",
+        "name":"Cauliflower",
+        "image":"images/cauliflower.jpg"
+},
+
+{
+        "number":"6",
+        "name":"Pineapple",
+        "image":"images/pineapple.jpg"
+},
+
+{
+        "number":"7",
+        "name":"Aloe vera",
+        "image":"images/aloeVera.jpg"
+},
+{
+        "number":"8",
+        "name":"Almonds",
+        "image":"images/almond.jpg"
+},
+
+{
+        "number":"9",
+        "name":"Coconut",
+        "image":"images/coconut.jpg"
+},
+
+{
+        "number":"10",
+        "name":"Corn",
+        "image":"images/corn.jpg"
+}
+
+
+
+]
