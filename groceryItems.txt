@@ -2,60 +2,70 @@
 {
         "number":"1",
         "name":"Apple",
-        "image":"images/apple.jpg"
+        "image":"images/apple.jpg",
+        "qty":1
 },
 
 {
         "number":"2",
         "name":"Blackberries",
-        "image":"images/blackberries.jpg"
+        "image":"images/blackberries.jpg",
+        "qty":2
 },
 
 {
         "number":"3",
         "name":"Bananas",
-        "image":"images/banana.jpg"
+        "image":"images/banana.jpg",
+        "qty":1
 },
 
 {
         "number":"4",
         "name":"Strawberries",
-        "image":"images/Strawberries.jpg"
+        "image":"images/Strawberries.jpg",
+        "qty":3
 },
 
 {
         "number":"5",
         "name":"Cauliflower",
-        "image":"images/cauliflower.jpg"
+        "image":"images/cauliflower.jpg",
+        "qty":2
 },
 
 {
         "number":"6",
         "name":"Pineapple",
-        "image":"images/pineapple.jpg"
+        "image":"images/pineapple.jpg",
+        "qty":1
 },
 
 {
         "number":"7",
         "name":"Aloe vera",
-        "image":"images/aloeVera.jpg"
+        "image":"images/aloeVera.jpg",
+        "qty":4
 },
 {
         "number":"8",
         "name":"Almonds",
-        "image":"images/almond.jpg"
+        "image":"images/almond.jpg",
+        "qty":1
 },
 
 {
         "number":"9",
         "name":"Coconut",
-        "image":"images/coconut.jpg"
+        "image":"images/coconut.jpg",
+        "qty":5
 },
 
 {
         "number":"10",
         "name":"Corn",
-        "image":"images/corn.jpg"
+        "image":"images/corn.jpg",
+        "qty":6
 }
 
 
