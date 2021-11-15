@@ -159,6 +159,12 @@ body::-webkit-scrollbar-thumb
     font-size: 16px;
 }
 
+.item h4{
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
 @media screen and (max-width:700px) {
     .text{
         width: 70%;
